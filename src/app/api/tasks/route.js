@@ -3,7 +3,6 @@ import { tasks } from "@/db/schema/task";
 
 export async function POST(req, res) {
   const body = await req.json();
-  console.log(body);
   const newTask = {
     task: body,
   };
